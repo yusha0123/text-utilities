@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+   appearance: none;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   width: auto;
+   height: 3em;
+   padding: 0 3em 0 1em;
+   background: url(../public/down-arrow.svg) no-repeat right 0.8em center / 1.4em, #1C82AD;
+   color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+   cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+select option {
+   color: #1C82AD;
+   background-color:#fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select:focus {
+   outline: none;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select::-ms-expand {
+   display: none;
 }
